@@ -791,5 +791,8 @@
   <!-- Havoc additions -->
   <include name="snippets/havoc.xml" />
   <include name="snippets/lineage.xml" />
-
+  
+  <!-- MINKAN -->
+  <include name="snippets/minkan.xml" />
+  
 </manifest>

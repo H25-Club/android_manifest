@@ -1,10 +1,10 @@
-Havoc-OS
+Havoc-OS - MINKAN
 ===========
 
 
 Getting Started
 ---------------
-To get started with the Havoc-OS sources, you'll need to get
+To get started with the Havoc-OS - MINKAN sources, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/develop).
 
 
@@ -17,7 +17,7 @@ To create them run:
 
 ```bash
    mkdir -p ~/bin
-   mkdir -p ~/havoc
+   mkdir -p ~/havoc-minkan
 ```
 
 Install the Repository
@@ -31,7 +31,7 @@ You may need to reboot for these changes to take effect.
 Now enter the following to initialize the repository:
 
 ```bash
-   cd ~/havoc
+   cd ~/havoc-minkan
 ```
 
 
@@ -39,7 +39,7 @@ To initialize your local repository, use this command:
 ------------------------------------------------------
 
 ```bash
-   repo init -u https://github.com/Havoc-OS/android_manifest.git -b ten
+   repo init -u ssh://git@github.com/H25-Club/android_manifest.git -b ten
 ```
   
 To Sync the source:
@@ -58,13 +58,8 @@ Initialize the environment with the envsetup.sh script. Note that replacing "sou
 
 ```bash
    . build/envsetup.sh
-    brunch
+   lunch havoc_devicecodename-userdebug
+   mka bacon
 ```
 
 Enter the number of the build you want to start and press enter
-
-
-Applying for Maintainership
----------------
-
-If you have successfully built for your device and want to apply for maintainership then drop in a message to SKULSHADY on Telegram or XDA.
